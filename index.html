@@ -5,15 +5,12 @@
 
 <script>
 
-if (typeof jQuery != 'undefined') {
- 
-    alert("jQuery library is loaded!");
- 
-}else{
- 
-    alert("jQuery library is not found!");
- 
-}
+var counter=0; //declare and initialize the counter outside of the function
+$(document).on('click', function(){
+counter++;
+$('.wat').append('<input id="input'+ counter+" type="text/>);
+});
+
 </script>
 
 <a href="http://instagram.com/broffles">instagram.com/broffles</a>
