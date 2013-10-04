@@ -1,31 +1,39 @@
-<html lang=en-us><head><title>BROFFLES</title>
+<html lang=en-us>
+<head>
+  <title>BROFFLES</title>
   <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
-  
-</head><body>BROWNIES + WAFFLES = <h1>BROFFLES!!!!</h1>
+</head>
+
+<body>BROWNIES + WAFFLES = <h1>BROFFLES!!!!</h1>
 
 <script>
+  var counter=0;
+  var divisor = 10;
+  $(document).on('click', "img", function(){
+  counter++;
+  if(counter % divisor === 0 && counter > 0) {
+    
+    s = "STAHPPP";
+    for(var h = 0; h < counter / divisor; h++) {
+      s = "PLZ" + s;
+    }
+    alert(s);
 
+  }
   
-var counter=0;
-$(document).on('click', "img", function(){
-counter++;
-if(counter > 25) counter = 0;
-$('#wat').text(counter);
-});
   
-
-
+  $('#wat').text(counter);
+  });
 </script>
 
-<a href="http://instagram.com/broffles">instagram.com/broffles</a>
-<a href="http://twitter.com/broffles">twitter.com/broffles</a>
-<a href="http://facebook.com/broffles">facebook.com/broffles</a>
-<a href="http://broffles.tumblr.com">broffles.tumblr.com</a>
-<a href="mailto:broffles@gmail.com">broffles@gmail.com</a>
+<a href="http://instagram.com/broffles">instagram.com/broffles</a><br/>
+<a href="http://twitter.com/broffles">twitter.com/broffles</a><br/>
+<a href="http://facebook.com/broffles">facebook.com/broffles</a><br/>
+<a href="http://broffles.tumblr.com">broffles.tumblr.com</a><br/>
+<a href="mailto:broffles@gmail.com">broffles@gmail.com</a><br/>
 
-Now that we know who you are, I know who I am. I'm not a mistake! It all makes sense! In a comic, you know how you can tell who the arch-villain's going to be? He's the exact opposite of the hero. And most times they're friends, like you and me! I should've known way back when... You know why, David? Because of the kids. They called me Mr Glass.</body></html>
+Click the broffle to gain points!<br/>
+IT'S A BROFFLE CLICKER! :D
 
 <div class = "BROFFLES"><img src="http://www.bettycrocker.com/~/media/Images/Bettys%20Dish/Sept2012/Brownie-Batter-Waffles/BrownieBatterWaffles_beauty.jpg"></img></div>
-
 <h1><div id="wat">0</div></h1>
-
