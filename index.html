@@ -10,6 +10,7 @@ var counter=0;
 $(document).on('click', "img", function(){
 counter++;
 $('#wat').text(counter);
+if(counter > 25) counter = 0;
 });
   
 
