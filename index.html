@@ -8,21 +8,18 @@
 
 <script>
   var counter=0;
-  var divisor = 10;
+  var divisor=20;
   $(document).on('click', "img", function(){
-  counter++;
-  if(counter % divisor === 0 && counter > 0) {
-    
-    s = "STAHPPP";
-    for(var h = 0; h < counter / divisor; h++) {
-      s = "PLZ" + s;
+    counter++;
+    $('#wat').text(counter);
+    if(counter % divisor === 0 && counter > 0) {
+      
+      s = "STAHPPP";
+      for(var h = 0; h < counter / divisor; h++) {
+        s = "PLZ" + s;
+      }
+      alert(s);
     }
-    alert(s);
-
-  }
-  
-  
-  $('#wat').text(counter);
   });
 </script>
 
