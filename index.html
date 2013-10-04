@@ -1,10 +1,17 @@
-<html lang=en-us><head><title>BROFFLES</title></head><body>BROWNIES + WAFFLES = <h1>BROFFLES!!!!</h1>
+<html lang=en-us><head><title>BROFFLES</title>
+  
+  <script src="jquery-1.10.2.min.js"></script>
 
-<script type="text/javascript">
-var counter = 0;
+  
+</head><body>BROWNIES + WAFFLES = <h1>BROFFLES!!!!</h1>
+
+<script>
+var counter=0; //declare and initialize the counter outside of the function
+$('#mybutton').on('click', function(){
+counter++;
+$('#inputdiv').append('<input id="input'+ counter+'" type="text/>);
+});
 </script>
-
-<button onclick="counter++">Increment</button>
 
 <a href="http://instagram.com/broffles">instagram.com/broffles</a>
 <a href="http://twitter.com/broffles">twitter.com/broffles</a>
